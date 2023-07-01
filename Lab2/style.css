@@ -1,0 +1,36 @@
+body{
+    background-color: beige;
+}
+
+.myTable{
+    background-color: lightblue;
+}
+
+tbale, td, th{
+    border: 3px solid green;
+    padding: 8px;
+}
+
+h2, h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Wireframe{
+    width: 600px;
+    height: auto;
+}
+
+h6{
+    font-size: larger;
+}
+
+

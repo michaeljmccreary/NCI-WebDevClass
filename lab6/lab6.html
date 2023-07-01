@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--The purpose of this lab is to change the text in the H1 to take the users name and age-->
+
+
+    <h1 id="mainTitle">Hello Hamilton you are 23 years old!</h1>
+<div id="form">
+
+<p class="fName">Name</p>
+<input id="nameInput" type="text" placeholder="Enter your name">
+<br>
+
+<p class="age">Age*</p>
+<input id="ageInput" type="text" placeholder="Enter your age" required><br>
+
+<button onclick="doSomething();">Greet me</button><br>
+
+</div>
+
+<button id="reset" onclick="location.reload()" style="display: none;">Reset</button>
+
+<script>
+    var name;
+    var age;
+
+    function doSomething(){
+        name = document.getElementById("nameInput").value;
+        age = document.getElementById("ageInput").value;
+        var mainTitle = document.getElementById("mainTitle");
+
+        if(isNaN(age)){
+            alert("not a valid number");
+        } else {
+            mainTitle.textContent = "Hello " + name + " you are " + age + " years old!";
+            form.style.display = "none";
+            reset.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>
